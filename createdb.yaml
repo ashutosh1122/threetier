@@ -5,7 +5,7 @@
       ec2_group:
         name: dbsg
         description: an example EC2 group
-        vpc_id: vpc-3e94a045
+        vpc_id: vpc-vpc-809382fb
         region: us-east-1
         rules:
           - proto: tcp
@@ -13,7 +13,7 @@
             to_port: 3306
             cidr_ip: 0.0.0.0/0
       register: dbsg
-    - debug:
+    - debug:ashutosh1122/ashu
         var: dbsg
     - rds_subnet_group:
         state: present
